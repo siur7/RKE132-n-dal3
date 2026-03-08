@@ -1,0 +1,7 @@
+from colorama import Fore
+n = int(input("Sisesta arv: "))
+match n % 2:
+    case 0:
+        print(Fore.GREEN + "Sisestatud arv on paaris.")
+    case _: 
+        print(Fore.RED + "Sisestatud arv on paaritu.")

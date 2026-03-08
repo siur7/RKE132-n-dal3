@@ -1,0 +1,15 @@
+from colorama import Fore, Style
+
+
+color = input("Siseta oma lemmikvärv: ").lower()
+match color:
+    case "punane":
+       print(Fore.RED + "Sinu temperament on kirglik ja energiline." + Style.RESET_ALL)
+    case "roosa":
+        print(Fore.MAGENTA + "Sinu temperament on romantiline ja tundlik." + Style.RESET_ALL)
+    case "roheline":
+        print(Fore.GREEN + "Sinu temperament on rahulik ja tasakaalukas." + Style.RESET_ALL)    
+    case "sinine":
+        print(Fore.BLUE + "Sinu temperament on usaldusväärne ja rahulik." + Style.RESET_ALL)
+    case _:
+        print(Fore.CYAN + "Sa oled unikaalne ükssarvik." + Style.RESET_ALL)
